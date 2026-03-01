@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedPeinture</title>
+    <meta
+      name="description"
+      content="Artisan peintre, plaquiste et enduiseur à Dunkerque et dans les environs. Plus de 15 ans d'expérience pour vos travaux de rénovation et d'aménagement intérieur."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50" aria-label="Navigation principale">
+      <div class="container mx-auto px-6 py-3">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <span class="text-blue-600 text-xl font-bold">MedPeinture</span>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#services" class="text-gray-700 hover:text-blue-600"
+              >Services</a
+            >
+            <a href="#about" class="text-gray-700 hover:text-blue-600"
+              >À propos</a
+            >
+            <a href="#gallery" class="text-gray-700 hover:text-blue-600"
+              >Galerie</a
+            >
+            <a href="#testimonials" class="text-gray-700 hover:text-blue-600"
+              >Témoignages</a
+            >
+            <a href="#contact" class="text-gray-700 hover:text-blue-600"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              class="text-gray-700 focus:outline-none"
+              aria-label="Ouvrir le menu de navigation"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+          <a
+            href="#services"
+            class="block py-2 text-gray-700 hover:text-blue-600"
+            >Services</a
+          >
+          <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600"
+            >À propos</a
+          >
+          <a
+            href="#gallery"
+            class="block py-2 text-gray-700 hover:text-blue-600"
+            >Galerie</a
+          >
+          <a
+            href="#testimonials"
+            class="block py-2 text-gray-700 hover:text-blue-600"
+            >Témoignages</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 text-gray-700 hover:text-blue-600"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-image text-white py-32 px-6">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Artisan peintre, plaquiste et enduiseur
+        </h1>
+        <p class="text-xl md:text-2xl mb-8">
+          Des finitions soignées pour vos projets de rénovation et d’aménagement
+          intérieur à Dunkerque et dans les environs
+        </p>
+        <a
+          href="#contact"
+          class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 inline-block"
+          >Demander un devis</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">À propos de moi</h2>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+            <img
+              src="https://images.unsplash.com/photo-1636737286810-0e58fd3a4ef1?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Mohamed"
+              class="rounded-full w-64 h-64 object-cover shadow-lg"
+            />
+          </div>
+          <div class="md:w-2/3 md:pl-12">
+            <h3 class="text-2xl font-semibold mb-4">MedPeinture</h3>
+            <p class="text-gray-700 mb-4">
+              Fort de plus de 15 ans d’expérience en pose de cloisons sèches,
+              doublages, plafonds et travaux de plâtrerie, j’interviens aussi
+              bien sur des rénovations complètes que sur des petits travaux, en
+              apportant la même rigueur et le même souci du détail à chaque
+              projet.
+            </p>
+            <p class="text-gray-700 mb-4">
+              Je réalise la préparation des supports, les enduits de finition,
+              le ponçage ainsi que la pose de peinture, afin d’assurer des
+              surfaces parfaitement lisses et prêtes à vivre.
+            </p>
+            <p class="text-gray-700 mb-6">
+              J’accompagne particuliers et professionnels en apportant rigueur,
+              savoir-faire et un souci constant de la qualité pour valoriser et
+              embellir leurs espaces intérieurs.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <span
+                class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium"
+                >+ 15 ans d'experience</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium"
+                >Professionnel reconnu</span
+              >
+              <span
+                class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium"
+                >Nord / Pas de Calais</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4">Les prestations</h2>
+        <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          Pose de cloisons, doublages, faux plafonds, finitions et peinture
+          intérieure : des prestations sur mesure pour tous vos travaux
+          d’aménagement.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300"
+          >
+            <div class="text-blue-600 mb-4">
+              <i class="fas fa-border-style text-4xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              Pose de cloisons et plafonds en plaques de plâtre
+            </h3>
+            <p class="text-gray-600">
+              Artisan plaquiste à Dunkerque et dans les environs, spécialisé
+              dans la pose de plaques de plâtre pour murs et plafonds, avec mise
+              en œuvre de solutions d’isolation acoustique et de protection
+              incendie, pour des finitions soignées et durables.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300"
+          >
+            <div class="text-blue-600 mb-4">
+              <i class="fas fa-paint-roller text-4xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Peinture intérieure</h3>
+            <p class="text-gray-600">
+              Services professionnels de peinture intérieure réalisés avec des
+              matériaux de qualité. Préparation soignée des surfaces et conseils
+              personnalisés en choix de couleurs pour des finitions impeccables.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300"
+          >
+            <div class="text-blue-600 mb-4">
+              <i class="fas fa-trowel text-4xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              Enduisage et finition des murs
+            </h3>
+            <p class="text-gray-600">
+              Services professionnels d’enduisage et de finition, pour obtenir
+              des surfaces parfaitement lisses, prêtes à être peintes ou
+              recouvertes de papier peint, avec un souci du détail et de la
+              qualité.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300"
+          >
+            <div class="text-blue-600 mb-4">
+              <i class="fas fa-wall text-4xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Cloisons sur mesure</h3>
+            <p class="text-gray-600">
+              Réalisation professionnelle de cloisons sur mesure à Dunkerque et
+              dans les environs, pour optimiser la distribution des espaces tout
+              en garantissant solidité, fonctionnalité et esthétisme.
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300"
+          >
+            <div class="text-blue-600 mb-4">
+              <i class="fas fa-archway text-4xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Plafonds</h3>
+            <p class="text-gray-600">
+              Travaux professionnels incluant la pose, la réparation et la
+              finition de plafonds, avec possibilité de plafonds suspendus et
+              moulures décoratives, pour un rendu soigné et durable.
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300"
+          >
+            <div class="text-blue-600 mb-4">
+              <i class="fas fa-hammer text-4xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              Rénovation et réparations
+            </h3>
+            <p class="text-gray-600">
+              Services professionnels de rénovation et de réparations, pour murs
+              et plafonds endommagés. Remise en état précise des plaques de
+              plâtre, rebouchage des fissures et correction des imperfections
+              pour un résultat impeccable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4">Mes réalisations</h2>
+        <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          Découvrez nos projets achevés et transformations, illustrant notre
+          savoir-faire et la qualité de nos finitions à Dunkerque et dans les
+          environs.
+        </p>
+
+        
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Gallery Item 1 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <img
+              src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Salon moderne avec murs en plâtre lisse à Dunkerque"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4 bg-white">
+              <p class="text-gray-600">
+                Salon moderne avec murs en plâtre lisse, illustrant nos finitions professionnelles.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Gallery Item 2 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <img
+              src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+              alt="Pose de cloison en cours"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4 bg-white">
+              <p class="text-gray-600">Pose professionnelle de cloison sèche.</p>
+            </div>
+          </div>
+        
+          <!-- Gallery Item 3 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <img
+              src="https://images.unsplash.com/photo-1600566752227-17f8d6080539?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Cloison finie avec joints parfaits"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4 bg-white">
+              <p class="text-gray-600">
+                Cloison sur mesure finie avec joints parfaits, pour un intérieur esthétique et durable.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Gallery Item 4 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <img
+              src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Enduit lisse prêt à peindre"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4 bg-white">
+              <p class="text-gray-600">
+                Enduit lisse et finition professionnelle, prêt pour peinture ou papier peint.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Gallery Item 5 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Projet complet de rénovation intérieure"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4 bg-white">
+              <p class="text-gray-600">
+                Projet complet de rénovation intérieure, mettant en valeur notre expertise.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Gallery Item 6 -->
+          <div class="gallery-item overflow-hidden rounded-lg shadow-md">
+            <img
+              src="https://images.unsplash.com/photo-1600566752355-35792bedcfe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Travaux de plafond sur mesure avec moulures décoratives"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-4 bg-white">
+              <p class="text-gray-600">
+                Travaux de plafond sur mesure avec moulures décoratives, pour des finitions élégantes et durables.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4">Témoignages</h2>
+        <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          Ce que mes clients disent de moi
+        </p>
+
+        <div class="relative max-w-4xl mx-auto">
+          <div
+            class="testimonial-card active bg-white p-8 rounded-lg shadow-md"
+          >
+            <div class="flex mb-4">
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-700 italic mb-6">
+              « Mohamed a transformé notre appartement grâce à son savoir-faire exceptionnel en plâtrerie. Les murs sont parfaitement lisses et les travaux ont été réalisés avant les délais prévus. Son sens du détail est remarquable. »
+            </p>
+            <div class="flex items-center">
+              <img
+                src="https://randomuser.me/api/portraits/women/43.jpg"
+                alt="Sophie Martin"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-semibold">Sophie Martin</h4>
+                <p class="text-gray-600 text-sm">Paris, 15ème arrondissement</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="testimonial-card hidden bg-white p-8 rounded-lg shadow-md"
+          >
+            <div class="flex mb-4">
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-700 italic mb-6">
+              « Nous avons fait appel à Mohamed pour l’installation de cloisons sèches dans nos bureaux. Son travail a été précis, soigné et parfaitement conforme à nos attentes. Il a compris nos besoins et a livré un résultat au-delà de nos espérances. »
+            </p>
+            <div class="flex items-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Thomas Lefèvre"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-semibold">Thomas Lefèvre</h4>
+                <p class="text-gray-600 text-sm">Boulogne-Billancourt</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="testimonial-card hidden bg-white p-8 rounded-lg shadow-md"
+          >
+            <div class="flex mb-4">
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <p class="text-gray-700 italic mb-6">
+              « Après une mauvaise expérience avec un autre prestataire, Mohamed a réparé nos murs et plafonds endommagés. Sa technique d’enduisage est impeccable. Notre intérieur retrouve un aspect comme neuf. Fortement recommandé ! »
+            </p>
+            <div class="flex items-center">
+              <img
+                src="https://randomuser.me/api/portraits/women/65.jpg"
+                alt="Élodie Bernard"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-semibold">Élodie Bernard</h4>
+                <p class="text-gray-600 text-sm">Montreuil</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-8 space-x-2">
+            <button
+              class="testimonial-dot w-3 h-3 rounded-full bg-blue-600 focus:outline-none"
+              data-index="0"
+            ></button>
+            <button
+              class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 focus:outline-none"
+              data-index="1"
+            ></button>
+            <button
+              class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 focus:outline-none"
+              data-index="2"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4">Me contacter</h2>
+        <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+          Contactez-moi pour discuter de votre projet ou demander un devis
+        </p>
+
+        <div class="flex flex-col lg:flex-row gap-12">
+          <div class="lg:w-1/2">
+            <form id="contact-form" class="space-y-6">
+              <div>
+                <label for="name" class="block text-gray-700 mb-2">Nom</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+              <div>
+                <label for="phone" class="block text-gray-700 mb-2"
+                  >Téléphone</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+              <div>
+                <label for="message" class="block text-gray-700 mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 w-full"
+              >
+                Envoyer
+              </button>
+            </form>
+
+            <div
+              id="form-success"
+              class="hidden mt-6 p-4 bg-green-100 text-green-700 rounded-lg"
+            >
+              Merci pour votre message ! Je vous répondrai dans les plus brefs délais
+            </div>
+          </div>
+
+          <div class="lg:w-1/2">
+            <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold mb-6">Informations de contact</h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="text-blue-600 mr-4 mt-1">
+                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium">Téléphone</h4>
+                    <p class="text-gray-600"><a href="tel:+33660078685" class="hover:text-blue-600">+33 6 60 07 86 85</a></p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="text-blue-600 mr-4 mt-1">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium">Email</h4>
+                    <p class="text-gray-600"><a href="mailto:contact@pmedpeinture.fr" class="hover:text-blue-600">contact@pmedpeinture.fr</a></p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="text-blue-600 mr-4 mt-1">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium">Zone d’intervention</h4>
+                    <p class="text-gray-600">Dunkerque et environs</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="text-blue-600 mr-4 mt-1">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium">Horaires</h4>
+<p class="text-gray-600">
+  Du lundi au vendredi : 8h00 - 18h00<br />Samedi : 9h00 - 13h00
+</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h4 class="font-medium mb-4">Retrouvez moi sur les réseaux sociaux</h4>
+                <div class="flex space-x-4">
+                  <a href="#" class="text-blue-600 hover:text-blue-800 text-xl" aria-label="Facebook MedPeinture"
+                    ><i class="fab fa-facebook-f" aria-hidden="true"></i
+                  ></a>
+                  <a href="#" class="text-blue-600 hover:text-blue-800 text-xl" aria-label="LinkedIn MedPeinture"
+                    ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+                  ></a>
+                  <a href="#" class="text-blue-600 hover:text-blue-800 text-xl" aria-label="Instagram MedPeinture"
+                    ><i class="fab fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 h-64 rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.99144060821!2d2.292292615509614!3d48.85837360866186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1623932341086!5m2!1sen!2sfr"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                title="Zone d'intervention de MedPeinture à Dunkerque et environs"
+                class="rounded-lg shadow-sm"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-xl font-bold mb-4">MedPeinture</h3>
+            <p class="text-gray-400 max-w-xs">
+              Services professionnels à Dunkerque et dans les environs. Savoir-faire de qualité depuis 2008.
+            </p>
+          </div>
+
+          <div class="mb-8 md:mb-0">
+            <h4 class="text-lg font-semibold mb-4">Liens</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-white transition"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition"
+                  >À propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="text-gray-400 hover:text-white transition"
+                  >Galerie</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-white transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-8 md:mb-0">
+            <h4 class="text-lg font-semibold mb-4">Mentions légales</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition">Politique de confidentialité</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition">Conditions d’utilisation</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition">Politique de cookies</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Réseaux sociaux</h4>
+            <div class="flex space-x-4 mb-4">
+              <a href="#" class="text-gray-400 hover:text-white text-xl" aria-label="Facebook MedPeinture"
+                ><i class="fab fa-facebook-f" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white text-xl" aria-label="LinkedIn MedPeinture"
+                ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white text-xl" aria-label="Instagram MedPeinture"
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+            </div>
+            <p class="text-gray-400"><a href="mailto:contact@pmedpeinture.fr" class="hover:text-white">contact@pmedpeinture.fr</a></p>
+            <p class="text-gray-400"><a href="tel:+33660078685" class="hover:text-white">+33 6 60 07 86 85</a></p>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 MedPeinture. Tous droits réservés</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
