@@ -2,9 +2,11 @@
   "name": "medpeinture",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "js/main.js",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./input.css -o ./style.css --watch",
+    "tw": "npx @tailwindcss/cli -i ./input.css -o ./style.css --watch",
+    "serve": "lite-server",
+    "dev": "concurrently \"npm run tw\" \"npm run serve\"",
     "build": "npx @tailwindcss/cli -i ./input.css -o ./style.css --minify"
   },
   "keywords": [],
@@ -12,6 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.1",
+    "concurrently": "^9.2.1",
+    "lite-server": "^2.6.1",
     "tailwindcss": "^4.2.1"
   }
 }
